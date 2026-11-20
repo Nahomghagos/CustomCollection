@@ -14,8 +14,10 @@ public class FixedList<T> {
     public void add(T item){
         if(items.size() >= maxSize) {
             System.out.println("item is too big");
+        }else {items.add(item);
+
         }
-        items.add(item);
+
     }
     public List <T> getItems() {
         return items;
